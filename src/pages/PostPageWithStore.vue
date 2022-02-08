@@ -125,7 +125,7 @@ export default {
         this.totalPages = Math.ceil(response.headers['x-total-count'] / this.limit);
         this.posts = [...this.posts, ...response.data];
       } catch (e) {
-        alert('Ошибка')
+        alert('Произошла ошибка')
       }
     }
   },
